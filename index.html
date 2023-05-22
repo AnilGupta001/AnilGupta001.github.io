@@ -1,121 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anil Gupta</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
-    <nav id="nav-menu">
-      <img src="C:\Users\Anil Gupta\Downloads\True (1).jpg" alt="">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
+  <header id="nav-menu">
+    <nav>
+      <ul>
+        <li><a class="nav-link home" href="#home">Home</a></li>
+        <li><a class="nav-link about" href="#about">About</a></li>
+        <li><a class="nav-link skills" href="#skills">Skills</a></li>
+        <li><a class="nav-link projects" href="#projects">Projects</a></li>
+        <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        <li><a class="nav-link resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      </ul>
     </nav>
-</header>
-<!-- //Home Part -->
-<home id="home"  class="nav-link home" >
-    <div id="about" class="about section" lass="nav-link about">
-    <div id="mid">
-         <img src="C:\Users\Anil Gupta\Downloads\True (1).jpg" alt="" class="home-img">
-         <div>
-          <h3 id="user-details-name">Anil Kumar Gupta</h3>  
-         <h6 id="user-detail-intro">
-          A passionate Full Stack Web Developer with strong design
-          and problem-solving skills.This individual possesses a
-          wide range of skills in front-end and back-end
-          development. Proficient in technologies such as
-          JavaScript, HTML, CSS, Java, SQL. and more. This
-          developer is capable of designing and implementing
-          high-quality applications that meet client needs.</h6>
-         </div>
+  </header>
 
-    </div>
-    </div>
-</home>
-<!-- //Skills part -->
-<div id="skills" class="nav-link skills" >
-  <div class="skills-logos">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
-    <img src="https://logowik.com/content/uploads/images/maven-apache3537.jpg" alt="">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-  </div>
-</div>
-<!-- //Project-Part id=projects -->
-<project id="projects" class="nav-link projects">
-<div>
-  <div class="project-card">
-    <img src="" alt="">
-    <div><h4>Clone Of Suger Cosmatics</h4></div>
-  </div>
-  <div class="project-card">
-    <h4  class="project-title">Clone of dell.com</h4>
-    <details class="project-description"></details>
-    <h5 class="project-tech-stack"></h5>
-    <button  class="project-github-link">github</button>
-    <button  class="project-deployed-link">Deployed Link</button>
-    <img src="" alt="">
-  </div>
-  <div class="project-card">
-    <h4>Clone of </h4>
-    <img src="" alt="">
-  </div >
-  <div>
-  <img src="" alt="">
-  <h4></h4>
-  </div>
-</div>
-</project>
-<!-- // contact with use -->
-<contact id="contact" class="nav-link contact">
+  <section id="home">
+    <h1 id="user-detail-name">Your Name</h1>
+    <p id="user-detail-intro">Formal introduction</p>
+    <img src="professional_photo.jpg" alt="Professional Photo" class="home-img">
+  </section>
 
-  <div>
-    <div>
-      <div id="contact-github">
-      <button>github</button>
-      <img src="" alt="">
-      </div>
-      <div id="contact-linkedin">
-        <button>inkedin</button>
-        <img src="" alt="">
-        </div>
-        <div id="contact-phone">
-          <button>Phone</button>
-          <img src="" alt="">
-          </div>
-          <div id="contact-email">
-            <button>Gmail</button>
-            <img src="" alt="">
-            </div>
-    </div>
+  <section id="about" class="about section">
+    <h2>About</h2>
+    <!-- About content here -->
+  </section>
 
-    <div>
-      <h1>Contect with us</h1>
-      <p>Send Massage From Here</p>
-      <input type="text" >
-      <button>Send Massage</button>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-card">
+      <img src="skill1.jpg" alt="Skill 1" class="skills-card-img">
+      <p class="skills-card-name">Skill 1</p>
     </div>
+    <div class="skills-card">
+      <img src="skill2.jpg" alt="Skill 2" class="skills-card-img">
+      <p class="skills-card-name">Skill 2</p>
+    </div>
+    <!-- Add more skills cards as needed -->
+  </section>
 
-  </div>
-</contact>
-<!-- //Downloads my resume from here -->
-<resume class="nav-link resume">
-  <div>
-    <a href="https://drive.google.com/file/d/11WD4n5TqEkH7RDCdiDBp1GjawTYzdCD7/view?usp=share_link"></a>
-  </div>
-</resume>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="project1.jpg" alt="Project 1">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Project 1 description</p>
+      <p class="project-tech-stack">Tech stack used: Tech 1, Tech 2</p>
+      <a class="project-github-link" href="https://github.com/project1" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      <a class="project-deployed-link" href="https://project1.com" target="_blank" rel="noopener noreferrer">Deployed Link</a>
+    </div>
+    <div class="project-card">
+      <img src="project2.jpg" alt="Project 2">
+      <h3 class="project-title">Project 2</h3>
+      <p class="project-description">Project 2 description</p>
+      <p class="project-tech-stack">Tech stack used: Tech 1, Tech 3</p>
+      <a class="project-github-link" href="https://github.com/project2" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      <a class="project-deployed-link" href="https://project2.com" target="_blank" rel="noopener noreferrer">Deployed Link</a>
+    </div>
+    <!-- Add more project cards as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p id="contact-github"><a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    <p id="contact-linkedin"><a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <p id="contact-phone">Phone: 123-456-7890</p>
+    <p id="contact-email">Email: yourname@example.com</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <button id="resume-button-1" onclick="window.open('resume.pdf')">Download Resume</button>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

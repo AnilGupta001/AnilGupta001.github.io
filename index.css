@@ -65,22 +65,12 @@ justify-content: space-between;
   border-radius: 25px
   
 }
-.skills-logos img{
+.skills-card img{
   width: 100px;
   height: 100;
+  background-color: rgb(12, 0, 0);
 }
-.skills-logos{
-  background-color: rgb(68, 1, 1);
- padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.skills-logos>img{
-  background-color: white;
-}
-.skill{
-  width: 100%;
-  height: 300px;
-  background-color:  rgb(68, 1, 1);
+#skills{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
 }
