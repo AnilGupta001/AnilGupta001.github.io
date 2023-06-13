@@ -1,108 +1,375 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anil Kumar Gupta - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>nil Kumar Gupta Portfolio</title>
+  <style>
+    /* Add your custom CSS styles here */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ff6f00;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .home {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .home h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .home-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skills-card {
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .skills-card:hover {
+      transform: scale(1.1);
+    }
+
+    .skills-card img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+    .project-card {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .project-description {
+      margin-bottom: 10px;
+    }
+
+    .project-tech-stack {
+      font-style: italic;
+      color: #888;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .project-links a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .resume-button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #000;
+    }
+
+    .github-profile {
+      text-align: center;
+    }
+
+    .github-profile img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Additional Animation and Design */
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .footer-container {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    
+  </style>
+  <!-- Add your CSS stylesheets and JavaScript files here -->
 </head>
 <body>
-  <header id="nav-menu">
-    <nav>
-      <ul>
-        <li><a class="nav-link home" href="#home">Home</a></li>
-        <li><a class="nav-link about" href="#about">About</a></li>
-        <li><a class="nav-link projects" href="#projects">Projects</a></li>
-        <li><a class="nav-link contact" href="#contact">Contact</a></li>
-        <li><a class="nav-link resume" href="https://lh3.googleusercontent.com/fife/APg5EOaaXIT10aYMwu4E8DggmDa2oG4p9PpME1mPX3m8sGWPSqFeBr3mdDUSosHw59f8vRzCaRAyV5s4uwj65ZQL4Gfpt4siT5KV9PypoT1MJvqIPOhvAkb_dM6e7kf1ceFxJluAYoe1bAROgEwMcK7yIijhKT7H4noAMEgnZine0vtPHiBPt9fayiUS6q-HwlCQx12RbgOlg-4jpI14CVmmJANOBRz2aNlODcM3-IO4i1enRqHXtlggihI1-0aFLXNUBsrIHcWwWDmiLhpQ_n5Rb67zqH1C2UOjuXhqTwmO4xUb5Zl9e41inJMf1KlMZ5WDNQiNe4QfvEjZVbzb6OBisppYksmiZNb01JvM_RlwdaXVCyAJwGcDGDayToSgPwxPHm8UMJbFmXeAco-40ondrL4D9Rn7O0JmOoZCHysBARZNRcBt-ztrue5xINyLiFbwQGIfOhUNNbnGVrQRbbxrEgLDsLzob8yqfIXhRXz0iiIWV1bH8KmrAtAl3rY1sQyCnSUZ4AWo-IOazYrH-Dw_KPnNg2U2nlbPo2WBZSJw4n1y6lckbqOeun5Tb02NDzXQRCO-vG2IyJZtU9W4dSb0_cbpyukpSSmKqBSJcOT_1EP4BIPRXND06ZQFvQ9fo6rgiO_Oh-ZpqADrCxdyfXO1NPs8QAWAtEMB4cpDvlHiAf1wt6144-0E4bssgFMTFACAEQdIKL1s9lHMwv-TORI3JTCPaaRBZiTJ2NvEDUTcafxleR_iO0usRB7m7NsaMX6DMmvUuVjTMxyyh1_mSuUlO0X-yDiioLxJE1j9t2GOkFlIydr6ws50Z3fzTIxTAIbEkkNcMV7HhUPHbnqcyvkWkbYgnkSSFswGmheZt3hJBFF7Ktr4cIxAWtXzwnbi6gYEJ0dMCq36MUsV9gyJtA0mp_1mPJnagkvvf9L2qW8UeYe5Rg-v0jmHcTKee25YcMFf3KjDdto3l-3SuyMKGDsW9WSp6q9HyXDqUjSYnk-LVgPL480IsVFANu8urNfnb2aY49Z4-V9BeOtQJcGPAYM57fJ68c52KjEDj2odIInRC8km_3Xd5YPju27dPrMya9gSJ7HJ3XMRVgkeCAJI5qhHVcObCSNrQTGJXnD6fHj5mdZbIfyWuXp5p43IuQ0fqOrMuU-qNzpbRrV3T3G14hTGB9Jyi5e53vv6gQFBWpTtULXwcA3WCOGJTkYMvviKfZyAEay7FRP8B0W8Uh98et381UBcWf1dHaZQWBisXjSoGLfSFXsWb9AuqmmElHD-lMqbSwhck5tHdEW4PSkXDXtYKRdbzCNXqBGFoZ5PBwVGvfMJvXsfRS_o6htKLIEIb9uH7uDONxY-Fc0m5nHhl0_gykzbNhrU4bhNk4yw57b_A2WKNKT1_2fbbu5QAcY_pATloFJsDFmCuqqDN0uvKDjkj8P8mr1dtY3878ETrL4h4HdNUF6VAkBWfLqEIns5mWvXtXFXmj14XIiRCVLhfKdB4Tqs6Ow5uTEmV17xKvu7jX5qhWj0_LCHEcGwKjmFXGHA6rDPGt0vQ4gEUwX26Toqcx4HLEI8IJ1lwSQX=w1366-h663" target="_blank" rel="noopener noreferrer">Resume</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <header>
+    <h1>Welcome to Anil Kumar Gupta Portfolio</h1>
   </header>
+  <nav>
+    <ul>
+      <li><a class="nav-link home" href="#home">Home</a></li>
+      <li><a class="nav-link about" href="#about">About</a></li>
+      <li><a class="nav-link skills" href="#skills">Skills</a></li>
+      <li><a class="nav-link projects" href="#projects">Projects</a></li>
+      <li><a class="nav-link contact" href="#contact">Contact</a></li>
+      <li><a class="nav-link resume" href="resume.pdf" target="_blank" download>Resume</a></li>
+    </ul>
+  </nav>
 
-  <section id="home">
-    <h1 id="user-detail-name">Anil Kumar Gupta</h1>
-    <p id="user-detail-intro">Full Stack Developer</p>
+  <!-- Home section -->
+  <section id="home" class="home">
+    <h1 class="fade-in">Full Stack Web Developer</h1>
+    <img class="home-img fade-in" src="True (1).jpg" alt="Professional Photo">
   </section>
 
-  <section id="about" class="about section">
-    <h2>About</h2>
-    <p>A passionate Full Stack Web Developer with strong design and problem-solving skills. This individual possesses a wide range of skills in front-end and back-end development. Proficient in technologies such as JavaScript, HTML, CSS, Java, SQL, and more. This developer is capable of designing and implementing high-quality applications that meet client needs.</p>
+  <!-- About section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <h2 id="user-detail-name">Hi I'm Anil Kumar Gupta</h2>
+    <p id="user-detail-intro">I am a passionate and dedicated student, eager to learn and grow in the field of web development.</p>
   </section>
 
-
-  <section id="skills">
+  <!-- Skills section -->
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skills-card-img">
-      <p class="skills-card-name">HTML</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skills-card-img">
-      <p class="skills-card-name">CSS</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skills-card-img">
-      <p class="skills-card-name">JavaScript</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skills-card-img">
-      <p class="skills-card-name">GitHub</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skills-card-img">
-      <p class="skills-card-name">Java</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="skills-card-img">
-      <p class="skills-card-name">Spring</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skills-card-img">
-      <p class="skills-card-name">MySQL</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://logowik.com/content/uploads/images/maven-apache3537.jpg" alt="Apache Maven" class="skills-card-img">
-      <p class="skills-card-name">Apache Maven</p>
-    </div>
-    <div class="skills-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skills-card-img">
-      <p class="skills-card-name">Bootstrap</p>
+    <div class="skills">
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skills-card-img" alt="HTML">
+        <p class="skills-card-name">HTML</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skills-card-img">
+        <p class="skills-card-name">CSS</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skills-card-img">
+        <p class="skills-card-name">JavaScript</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skills-card-img">
+        <p class="skills-card-name">GitHub</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skills-card-img">
+        <p class="skills-card-name">Java</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="skills-card-img">
+        <p class="skills-card-name">Spring</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skills-card-img">
+        <p class="skills-card-name">MySQL</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://logowik.com/content/uploads/images/maven-apache3537.jpg" alt="Apache Maven" class="skills-card-img">
+        <p class="skills-card-name">Apache Maven</p>
+      </div>
+      <div class="skills-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skills-card-img">
+        <p class="skills-card-name">Bootstrap</p>
+      </div>
+      <!-- Add more skills cards -->
     </div>
   </section>
-  
 
-  <section id="projects">
+  <!-- Projects section -->
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
-    <div class="project-card">
-      <img src="https://lh3.googleusercontent.com/fife/APg5EOaaXIT10aYMwu4E8DggmDa2oG4p9PpME1mPX3m8sGWPSqFeBr3mdDUSosHw59f8vRzCaRAyV5s4uwj65ZQL4Gfpt4siT5KV9PypoT1MJvqIPOhvAkb_dM6e7kf1ceFxJluAYoe1bAROgEwMcK7yIijhKT7H4noAMEgnZine0vtPHiBPt9fayiUS6q-HwlCQx12RbgOlg-4jpI14CVmmJANOBRz2aNlODcM3-IO4i1enRqHXtlggihI1-0aFLXNUBsrIHcWwWDmiLhpQ_n5Rb67zqH1C2UOjuXhqTwmO4xUb5Zl9e41inJMf1KlMZ5WDNQiNe4QfvEjZVbzb6OBisppYksmiZNb01JvM_RlwdaXVCyAJwGcDGDayToSgPwxPHm8UMJbFmXeAco-40ondrL4D9Rn7O0JmOoZCHysBARZNRcBt-ztrue5xINyLiFbwQGIfOhUNNbnGVrQRbbxrEgLDsLzob8yqfIXhRXz0iiIWV1bH8KmrAtAl3rY1sQyCnSUZ4AWo-IOazYrH-Dw_KPnNg2U2nlbPo2WBZSJw4n1y6lckbqOeun5Tb02NDzXQRCO-vG2IyJZtU9W4dSb0_cbpyukpSSmKqBSJcOT_1EP4BIPRXND06ZQFvQ9fo6rgiO_Oh-ZpqADrCxdyfXO1NPs8QAWAtEMB4cpDvlHiAf1wt6144-0E4bssgFMTFACAEQdIKL1s9lHMwv-TORI3JTCPaaRBZiTJ2NvEDUTcafxleR_iO0usRB7m7NsaMX6DMmvUuVjTMxyyh1_mSuUlO0X-yDiioLxJE1j9t2GOkFlIydr6ws50Z3fzTIxTAIbEkkNcMV7HhUPHbnqcyvkWkbYgnkSSFswGmheZt3hJBFF7Ktr4cIxAWtXzwnbi6gYEJ0dMCq36MUsV9gyJtA0mp_1mPJnagkvvf9L2qW8UeYe5Rg-v0jmHcTKee25YcMFf3KjDdto3l-3SuyMKGDsW9WSp6q9HyXDqUjSYnk-LVgPL480IsVFANu8urNfnb2aY49Z4-V9BeOtQJcGPAYM57fJ68c52KjEDj2odIInRC8km_3Xd5YPju27dPrMya9gSJ7HJ3XMRVgkeCAJI5qhHVcObCSNrQTGJXnD6fHj5mdZbIfyWuXp5p43IuQ0fqOrMuU-qNzpbRrV3T3G14hTGB9Jyi5e53vv6gQFBWpTtULXwcA3WCOGJTkYMvviKfZyAEay7FRP8B0W8Uh98et381UBcWf1dHaZQWBisXjSoGLfSFXsWb9AuqmmElHD-lMqbSwhck5tHdEW4PSkXDXtYKRdbzCNXqBGFoZ5PBwVGvfMJvXsfRS_o6htKLIEIb9uH7uDONxY-Fc0m5nHhl0_gykzbNhrU4bhNk4yw57b_A2WKNKT1_2fbbu5QAcY_pATloFJsDFmCuqqDN0uvKDjkj8P8mr1dtY3878ETrL4h4HdNUF6VAkBWfLqEIns5mWvXtXFXmj14XIiRCVLhfKdB4Tqs6Ow5uTEmV17xKvu7jX5qhWj0_LCHEcGwKjmFXGHA6rDPGt0vQ4gEUwX26Toqcx4HLEI8IJ1lwSQX=w1366-h663" alt="Beauty Products">
-      <h3 class="project-title">Beauty and Cosmetics Sales Website</h3>
-      <p class="project-description">An website that sells beauty and cosmetics products.</p>
-      <p class="project-tech-stack">Tech stack used: HTML, JavaScript, CSS, API</p>
-    </div>
-    <div class="project-card">
-      <img src="tech-products.jpg" alt="Tech Products">
-      <h3 class="project-title">Tech Products E-commerce Website</h3>
-      <p class="project-description">A website that sells laptops and other tech products.</p>
-      <p class="project-tech-stack">Tech stack used: HTML, JavaScript, CSS, API</p>
-    </div>
-    <div class="project-card">
-      <h3 class="project-title">Batch Management System</h3>
-      <p class="project-description">A Java project for batch and faculty management in institutions.</p>
-      <p class="project-tech-stack">Tech stack used: Java</p>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://lh3.googleusercontent.com/fife/APg5EOaaXIT10aYMwu4E8DggmDa2oG4p9PpME1mPX3m8sGWPSqFeBr3mdDUSosHw59f8vRzCaRAyV5s4uwj65ZQL4Gfpt4siT5KV9PypoT1MJvqIPOhvAkb_dM6e7kf1ceFxJluAYoe1bAROgEwMcK7yIijhKT7H4noAMEgnZine0vtPHiBPt9fayiUS6q-HwlCQx12RbgOlg-4jpI14CVmmJANOBRz2aNlODcM3-IO4i1enRqHXtlggihI1-0aFLXNUBsrIHcWwWDmiLhpQ_n5Rb67zqH1C2UOjuXhqTwmO4xUb5Zl9e41inJMf1KlMZ5WDNQiNe4QfvEjZVbzb6OBisppYksmiZNb01JvM_RlwdaXVCyAJwGcDGDayToSgPwxPHm8UMJbFmXeAco-40ondrL4D9Rn7O0JmOoZCHysBARZNRcBt-ztrue5xINyLiFbwQGIfOhUNNbnGVrQRbbxrEgLDsLzob8yqfIXhRXz0iiIWV1bH8KmrAtAl3rY1sQyCnSUZ4AWo-IOazYrH-Dw_KPnNg2U2nlbPo2WBZSJw4n1y6lckbqOeun5Tb02NDzXQRCO-vG2IyJZtU9W4dSb0_cbpyukpSSmKqBSJcOT_1EP4BIPRXND06ZQFvQ9fo6rgiO_Oh-ZpqADrCxdyfXO1NPs8QAWAtEMB4cpDvlHiAf1wt6144-0E4bssgFMTFACAEQdIKL1s9lHMwv-TORI3JTCPaaRBZiTJ2NvEDUTcafxleR_iO0usRB7m7NsaMX6DMmvUuVjTMxyyh1_mSuUlO0X-yDiioLxJE1j9t2GOkFlIydr6ws50Z3fzTIxTAIbEkkNcMV7HhUPHbnqcyvkWkbYgnkSSFswGmheZt3hJBFF7Ktr4cIxAWtXzwnbi6gYEJ0dMCq36MUsV9gyJtA0mp_1mPJnagkvvf9L2qW8UeYe5Rg-v0jmHcTKee25YcMFf3KjDdto3l-3SuyMKGDsW9WSp6q9HyXDqUjSYnk-LVgPL480IsVFANu8urNfnb2aY49Z4-V9BeOtQJcGPAYM57fJ68c52KjEDj2odIInRC8km_3Xd5YPju27dPrMya9gSJ7HJ3XMRVgkeCAJI5qhHVcObCSNrQTGJXnD6fHj5mdZbIfyWuXp5p43IuQ0fqOrMuU-qNzpbRrV3T3G14hTGB9Jyi5e53vv6gQFBWpTtULXwcA3WCOGJTkYMvviKfZyAEay7FRP8B0W8Uh98et381UBcWf1dHaZQWBisXjSoGLfSFXsWb9AuqmmElHD-lMqbSwhck5tHdEW4PSkXDXtYKRdbzCNXqBGFoZ5PBwVGvfMJvXsfRS_o6htKLIEIb9uH7uDONxY-Fc0m5nHhl0_gykzbNhrU4bhNk4yw57b_A2WKNKT1_2fbbu5QAcY_pATloFJsDFmCuqqDN0uvKDjkj8P8mr1dtY3878ETrL4h4HdNUF6VAkBWfLqEIns5mWvXtXFXmj14XIiRCVLhfKdB4Tqs6Ow5uTEmV17xKvu7jX5qhWj0_LCHEcGwKjmFXGHA6rDPGt0vQ4gEUwX26Toqcx4HLEI8IJ1lwSQX=w1366-h663" alt="Beauty Products">
+        <h3 class="project-title">Beauty and Cosmetics Sales Website</h3>
+        <p class="project-description">An website that sells beauty and cosmetics products</p>
+        <p class="project-tech-stack">Tech stack used: HTML, JavaScript, CSS, API</p>
+        <div class="project-links">
+          <a class="project-github-link" href="https://github.com/AnilGupta001/loving-friends-4004" target="_blank">GitHub Repository</a>
+          <a class="project-live-link" href="https://sugar-cosmatics-clone.netlify.app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot (1421).png" alt="Project 2">
+        <h3 class="project-title">Tech Products E-commerce Website</h3>
+        <p class="project-description">A website that sells laptops and other tech products.</p>
+        <p class="project-tech-stack">Tech stack used: HTML, JavaScript, CSS, API</p>
+        <div class="project-links">
+          <a class="project-github-link" href="https://github.com/KoushikNiyogi/Dell.com-clone" target="_blank">GitHub Repository</a>
+          <a class="project-live-link" href="https://calm-pothos-3ee819.netlify.app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot (1423).png" alt="Project 2">
+        <h3 class="project-title">Stock Broker System</h3>
+        <p class="project-description"> It is a Complete Console Based Project .In the Applicataion You can Buy Stocks and Sell.</p>
+        <p class="project-tech-stack">Tech stack used: Java,MySQL,</p>
+        <div class="project-links">
+          <a class="project-github-link" href="https://github.com/AnilGupta001/merry-snake-4737" target="_blank">GitHub Repository</a>
+          <a class="project-live-link" href="https://drive.google.com/file/d/16xcHqIlhH2e011yK7P4xrTIW6w3zaUZT/view" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <!-- Add more project cards -->
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p id="contact-github"><a href="https://github.com/anilgupta001" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-    <p id="contact-linkedin"><a href="https://linkedin.com/in/anilgupta" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    <p id="contact-phone">Phone:+91 8827786439</p>
-    <p id="contact-email">Email: ga6119480@gmail.com</p>
-  </section>
+  <!-- Contact section -->
+ <!-- Contact section -->
+<section id="contact" class="contact fade-in">
+  <h2>Contact</h2>
+  <h4>Get in Touch</h4>
+  <p>Feel free to get in touch with me for any inquiries, collaboration opportunities, or just to say hello! I'm always excited to connect with like-minded individuals, businesses, and organizations who are passionate about technology and innovation.</p>
+  <p>Email: ga6119480@gmail.com</p>
+  <p><a href="#phone">WhatsApp</a></p>
+  <p id="phone">Phone: +91 8827786439</p>
+  <p><a href="https://www.linkedin.com/in/AnilGupta001" target="_blank">LinkedIn</a></p>
+</section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <button id="resume-button-1" onclick="window.open('https://drive.google.com/drive/u/0/my-drive')">Download Resume</button>
-  </section>
 
-  <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="footer-container fade-in">
+    <div class="github-profile">
+      <h3>GitHub Profile</h3>
+      <img src="Screenshot 2023-06-13 100410.png" alt="GitHub Profile">
+      <img src="Screenshot 2023-06-13 100910.png" alt="GitHub Profile">
+      <div><img src="Screenshot 2023-06-13 100427.png" alt="GitHub Profile">
+      <img src="C:\Users\Anil Gupta\Desktop\AnilGupta001.github.io\Screenshot 2023-06-13 101024.png" alt="GitHub Profile">
+ 
+  </div>
+
+    </div>
+  </footer>
 </body>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+<script>
+  // Initialize the typewriter effect
+  const typewriter = new Typewriter('#user-detail-name', {
+    delay: 75, // Delay between each character
+    loop: false, // Set to true if you want the animation to loop
+    deleteSpeed: 30, // Speed of character deletion
+  });
+
+  // Start the typewriter animation
+  typewriter.typeString("Hi I'm Anil Kumar Gupta").start();
+</script>
 </html>
