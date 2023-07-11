@@ -1,231 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>nil Kumar Gupta Portfolio</title>
-  <style>
-    /* Add your custom CSS styles here */
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #555;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin-right: 10px;
-    }
-
-    .nav-link {
-      text-decoration: none;
-      color: #fff;
-      padding: 5px;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #ff6f00;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    .home {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .home h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .home-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .skills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .skills-card {
-      margin: 10px;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .skills-card:hover {
-      transform: scale(1.1);
-    }
-
-    .skills-card img {
-      width: 50px;
-      height: 50px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-    }
-    @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .projects{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-  }
-}
-
-    .project-card {
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .project-title {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-
-    .project-description {
-      margin-bottom: 10px;
-    }
-
-    .project-tech-stack {
-      font-style: italic;
-      color: #888;
-    }
-
-    .project-links {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
-
-    .project-links a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px 10px;
-      border: 1px solid #333;
-      border-radius: 5px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .project-links a:hover {
-      background-color: #333;
-      color: #fff;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact p {
-      margin-bottom: 10px;
-    }
-
-    .resume-button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .resume-button:hover {
-      background-color: #000;
-    }
-
-    .github-profile {
-      text-align: center;
-    }
-
-    .github-profile img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    /* Additional Animation and Design */
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    .footer-container {
-      background-color: #333;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-    }
-    
-  </style>
+  <title>Anil Kumar Gupta Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="True (1).jpg">
+  <link rel="stylesheet" href="index.css">
   <!-- Add your CSS stylesheets and JavaScript files here -->
 </head>
 <body>
+  <div class="stars-container">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <!-- Add more star elements as needed -->
+  </div>
   <!-- Navbar -->
   <header>
-    <h1>Welcome to Anil Kumar Gupta Portfolio</h1>
+    <h1 id="welcome">Welcome to Anil Kumar Gupta Portfolio</h1>
   </header>
   <nav id="nav-manu" >
     <ul>
@@ -234,22 +24,30 @@
       <li><a class="nav-link skills" href="#skills">Skills</a></li>
       <li><a class="nav-link projects" href="#projects">Projects</a></li>
       <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <li><a class="nav-link resume" href="resume.pdf" target="_blank" download>Resume</a></li>
+      <li><a  class="nav-link contact" target="_blank" href="https://drive.google.com/file/d/1u1Qb0CpUeNRDODeLUMRaaYOopZYyD7kC/view?usp=sharing">Resume</a></li>
     </ul>
   </nav>
 
   <!-- Home section -->
-  <section id="home" class="home">
-    <h1 class="fade-in">Full Stack Web Developer</h1>
-    <img class="home-img fade-in" src="True (1).jpg" alt="Professional Photo">
-  </section>
-
-  <!-- About section -->
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <h2 id="user-detail-name">Hi I'm Anil Kumar Gupta</h2>
-    <p id="user-detail-intro">I am a passionate and dedicated student, eager to learn and grow in the field of web development.</p>
-  </section>
+  <div id="home-section">
+    <!-- Home section -->
+    <section id="home" class="home">
+      <div class="home-content fade-in">
+        <h1>Full Stack Web Developer</h1>
+        <img class="home-img" src="True (1).jpg" alt="Professional Photo">
+      </div>
+    </section>
+  
+    <!-- About section -->
+    <section id="about" class="about fade-in">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <h2 id="user-detail-name">Hi, I'm Anil Kumar Gupta</h2>
+        <p  id="user-detail-intro">Passionate Full Stack Web Developer with strong design and problem-solving skills. Possesses a wide range of expertise in front-end and back-end development, proficient in technologies such as JavaScript, HTML, CSS, Java, SQL, and more. Skilled in creating visually appealing and user-friendly interfaces while delivering high-quality applications that meet clients' needs.</p>
+      </div>
+    </section>
+  </div>
+  
 
   <!-- Skills section -->
   <section id="skills" class="fade-in">
@@ -335,15 +133,36 @@
 
   <!-- Contact section -->
  <!-- Contact section -->
-<section id="contact" class="contact fade-in">
+ <section id="contact" class="contact fade-in">
   <h2>Contact</h2>
-  <h4>Get in Touch</h4>
-  <p>Feel free to get in touch with me for any inquiries, collaboration opportunities, or just to say hello! I'm always excited to connect with like-minded individuals, businesses, and organizations who are passionate about technology and innovation.</p>
-  <p>Email: ga6119480@gmail.com</p>
-  <p><a href="#phone">WhatsApp</a></p>
-  <p id="phone">Phone: +91 8827786439</p>
-  <p><a href="https://www.linkedin.com/in/AnilGupta001" target="_blank">LinkedIn</a></p>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h4>Get in Touch</h4>
+      <p>Feel free to get in touch with me for any inquiries, collaboration opportunities, or just to say hello! I'm always excited to connect with like-minded individuals, businesses, and organizations who are passionate about technology and innovation.</p>
+    </div>
+    <div class="contact-details">
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+        <p>Email: ga6119480@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
+        <p><a href="#phone">WhatsApp</a></p>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+        <p id="phone">Phone: +91 8827786439</p>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+        <p><a href="https://www.linkedin.com/in/AnilGupta001" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
 </section>
+
+  </div>
+
 
 
   <!-- Footer -->
@@ -368,8 +187,36 @@
     loop: false, // Set to true if you want the animation to loop
     deleteSpeed: 30, // Speed of character deletion
   });
-
+  const typewriter1 = new Typewriter('#welcome', {
+    delay: 75, // Delay between each character
+    loop: false, // Set to true if you want the animation to loop
+    deleteSpeed: 30, // Speed of character deletion
+  });
+  const typewriter2= new Typewriter('#user-detail-intro', {
+    delay: 0, // Delay between each character
+    loop: false, // Set to true if you want the animation to loop
+    deleteSpeed: 30, // Speed of character deletion
+  });
+  typewriter2.typeString("Passionate Full Stack Web Developer with strong design and problem-solving skills. Possesses a wide range of expertise in front-end and back-end"
++" development, proficient in technologies such as"
++" JavaScript, HTML, CSS, Java, SQL, and more. Skilled in"
++" creating visually appealing and user-friendly"
++" interfaces while delivering high-quality applications"
++" that meet clients' needs.").start();
+  typewriter1.typeString("Welcome to Anil Kumar Gupta Portfolio").start();
   // Start the typewriter animation
   typewriter.typeString("Hi I'm Anil Kumar Gupta").start();
+  document.addEventListener('DOMContentLoaded', function() {
+  var starsContainer = document.querySelector('.stars-container');
+  
+  for (var i = 0; i < 30; i++) {
+    var star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    starsContainer.appendChild(star);
+  }
+});
+
 </script>
 </html>
