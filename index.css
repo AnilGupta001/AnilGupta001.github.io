@@ -16,7 +16,7 @@ border-radius: 5px;
 
   header {
     background-color: #090000;
-    color: #629c04;
+    color: #a46601;
     padding-top: 50px;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -117,7 +117,7 @@ border-radius: 5px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 480px){
 /* For mobile phones: */
 .projects{
   display: grid;
@@ -345,7 +345,7 @@ border-radius: 50%;
 margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 480px){
 #home, #about {
   display: grid;
   grid-template-columns: repeat(1,auto);
@@ -360,13 +360,14 @@ margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2,50%);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480px) {
   #home-section{
     display: grid;
     grid-template-columns: repeat(1,100%);
   }
   
   }
+ 
 /* Add the relevant font-awesome icons for the contact icons */
 
 
